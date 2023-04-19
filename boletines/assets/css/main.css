@@ -1,4 +1,136 @@
 /* Path: boletines\assets\css\main.css */
-td{
+
+/*
+Azul marino       #023859
+Azul              #0378A6
+Azul verde oscuro #025059
+Azul verde claro  #60B6BF
+Azul verde  #118C8C
+*/
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0378A6;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+a:active {
+    color: red;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td {
     border: solid 1px black;
+}
+
+.container {
+    background: #667db6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    padding: 1.8em;
+}
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50px;
+    background-color: #0378A6;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph {
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.fa-star {
+    color: rgba(255, 217, 0, 0.863);
+}
+
+
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td,
+.table th {
+    padding: 1em;
+    text-align: left;
+    border-style: none;
+}
+
+.table tr:nth-child(even) {
+    background-color: #1daae2;
+}
+
+.title-item {
+    border-bottom: solid 2px #0378A6;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.position {
+    background-color: #0378A6;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.address {
+    color: #0378A6;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main-image {
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+    width: 400px;
 }
