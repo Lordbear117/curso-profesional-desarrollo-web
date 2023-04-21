@@ -1,7 +1,7 @@
 :root {
     --dark-gray: hsl(0, 0%, 63%);
     --black: hsl(0, 0%, 0%);
-    --white: hsl(0, 0%, 100%; );
+    --white: hsl(0, 100%, 100%);
     --very-dark-gray: hsl(0, 0%, 27%);
 }
 
@@ -57,7 +57,6 @@ body {
 
 .main__controls {
     grid-area: main;
-    /* this next two to move the arrows to the top right and then bottom right */
     align-self: end;
     justify-self: end;
     background-color: var(--black);
@@ -93,6 +92,10 @@ body {
     line-height: 1.5;
     margin: 1em 0 2em;
     color: var(--dark-gray);
+}
+
+.main__paragraph--about{
+    margin: 1em 0 0 0;
 }
 
 .main__cta {
@@ -136,8 +139,38 @@ body {
             "main main main main buy buy buy"
             "main main main main buy buy buy"
             "main main main main buy buy buy"
-            "image1 image1 about about about image2 image2 image2"
-            "image1 image1 about about about image2 image2 image2";
+            "image1 image1 about about about image2 image2"
+            "image1 image1 about about about image2 image2";
+    }
+
+    .main__controls{
+        grid-area: buy;
+        justify-self: start;
+    }
+
+    .main__hamburguer{
+        display: none;
+    }
+
+    .main__links{
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        margin-left: 10%;
+    }
+
+    .main__list{
+        list-style: none;
+    }
+
+    .main__link{
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .main__logo{
+        margin:0;
     }
 
 }
