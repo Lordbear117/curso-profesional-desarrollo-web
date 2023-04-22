@@ -57,19 +57,40 @@ body {
 
 .main__controls {
     grid-area: main;
+    /* la caja que contiene a las flechas */
     align-self: end;
     justify-self: end;
     background-color: var(--black);
     display: flex;
+    flex-direction: row;
     width: 100px;
     height: 50px;
-    justify-content: space-around;
+    /* contenido del flex */
+   
+}
+
+.main__arrow--left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main__arrow--right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .main__arrows {
-    height: 40%;
+    height: 40%; 
 }
+
+
 
 .main__buy {
     grid-area: buy;
@@ -173,4 +194,22 @@ body {
         margin:0;
     }
 
+}
+
+.main__link:hover{
+    border-bottom:1px solid var(--white);
+    border-width: 2px;
+    padding-bottom: 5px;
+}
+
+.main__arrow--left:hover{
+    background-color: var(--very-dark-gray);
+}
+
+.main__arrow--right:hover{
+    background-color: var(--very-dark-gray);
+}
+
+.main__cta:hover{
+    opacity: 0.5;
 }
